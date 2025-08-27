@@ -1,40 +1,211 @@
-Privacy Policy for Tic Tac Toe App
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Tic Tac Toe</title>
+  <meta name="description" content="Privacy Policy for Tic Tac Toe (no personal data collected)" />
 
-Effective Date: [8/27/2025]
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent1: linear-gradient(135deg,#7c3aed 0%, #06b6d4 100%);
+      --glass: rgba(255,255,255,0.03);
+      --muted: #9aa4b2;
+      --radius: 14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
 
-Your privacy is very important to us. This Privacy Policy explains how our Tic Tac Toe app handles user information.
+    html,body{height:100%}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent 6%),
+        radial-gradient(900px 500px at 90% 90%, rgba(6,182,212,0.08), transparent 8%),
+        var(--bg);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+      box-sizing:border-box;
+    }
 
-1. Information We Collect
+    .wrap{
+      width:100%;
+      max-width:880px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.03);
+      display:flex;
+      flex-direction:column;
+    }
 
-Our app does not collect, store, or share any personal information about its users.
+    header{
+      padding:28px;
+      display:flex;
+      gap:18px;
+      align-items:center;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-bottom:1px solid rgba(255,255,255,0.02);
+    }
 
-We do not require you to sign in or provide any details to use the app.
+    .logo {
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background: var(--accent1);
+      color:white;
+      font-weight:700;
+      font-size:22px;
+      box-shadow: 0 6px 18px rgba(12,9,47,0.45);
+    }
 
-2. How We Use Information
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
 
-Since no personal information is collected, no data is used for tracking, marketing, or analytics.
+    small{
+      display:block;
+      color:var(--muted);
+      margin-top:4px;
+      font-size:13px;
+    }
 
-The app is purely for entertainment purposes (playing Tic Tac Toe).
+    main{
+      padding:28px;
+      display:grid;
+      gap:18px;
+      line-height:1.55;
+    }
 
-3. Third-Party Services
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+      border-radius:12px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
 
-Our app does not integrate any third-party services (such as Google Analytics, Firebase, or ads).
+    .section-title{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size:16px;
+    }
+    .muted { color:var(--muted); font-size:13px; margin-top:6px; }
 
-4. Children’s Privacy
+    ul { margin:10px 0 0 18px; color:#cfe6ff; }
+    a.email {
+      color: #fff;
+      text-decoration:none;
+      background: linear-gradient(90deg,#7c3aed,#06b6d4);
+      padding:8px 12px;
+      border-radius:8px;
+      display:inline-block;
+      font-weight:600;
+    }
 
-Our app is safe for children and does not collect any data.
+    footer{
+      padding:18px 28px;
+      border-top:1px solid rgba(255,255,255,0.02);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.005), transparent);
+      color:var(--muted);
+      font-size:13px;
+    }
 
-Parents can allow their children to play without concerns about privacy.
+    /* responsive */
+    @media (max-width:640px){
+      .wrap { border-radius:12px; }
+      header { padding:20px; }
+      main { padding:20px; }
+      .logo { width:52px; height:52px; font-size:18px; border-radius:10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="title">
+    <header>
+      <div class="logo" aria-hidden="true">TTT</div>
+      <div>
+        <h1 id="title">Privacy Policy — Tic Tac Toe</h1>
+        <small>Effective Date: <strong id="date">8/27/2025</strong></small>
+      </div>
+    </header>
 
-5. Changes to This Policy
+    <main>
+      <section class="card" aria-labelledby="info-collect">
+        <div class="section-title">
+          <h2 id="info-collect">1. Information We Collect</h2>
+        </div>
+        <p class="muted">Short summary</p>
+        <p>Our Tic Tac Toe app does <strong>not</strong> collect, store, or share any personal information about users. You can play without signing in or providing details.</p>
+      </section>
 
-We may update this Privacy Policy in the future if new features are added.
+      <section class="card" aria-labelledby="how-use">
+        <div class="section-title">
+          <h2 id="how-use">2. How We Use Information</h2>
+        </div>
+        <p class="muted">No data = no tracking</p>
+        <p>Because the app collects no personal information, no data is used for tracking, marketing, analytics, or profiling. The app exists solely for entertainment (playing Tic Tac Toe).</p>
+      </section>
 
-Updates will be reflected in this document.
+      <section class="card" aria-labelledby="third-party">
+        <div class="section-title">
+          <h2 id="third-party">3. Third-Party Services</h2>
+        </div>
+        <p class="muted">No third-party integrations</p>
+        <p>This app does not integrate third-party services such as Google Analytics, Firebase, or advertising SDKs.</p>
+      </section>
 
-6. Contact Us
+      <section class="card" aria-labelledby="children">
+        <div class="section-title">
+          <h2 id="children">4. Children’s Privacy</h2>
+        </div>
+        <p class="muted">Family-friendly</p>
+        <p>The app is safe for children and does not collect any data. Parents may allow children to play without privacy concerns.</p>
+      </section>
 
-If you have any questions about this Privacy Policy, you can contact us at:
+      <section class="card" aria-labelledby="changes">
+        <div class="section-title">
+          <h2 id="changes">5. Changes to This Policy</h2>
+        </div>
+        <p class="muted">Policy updates</p>
+        <p>We may update this Privacy Policy if new features are added. Any updates will be reflected on this page with an updated effective date.</p>
+      </section>
 
-📧 [sammarmehmood1342@gmail.com
-]
+      <section class="card" aria-labelledby="contact">
+        <div class="section-title">
+          <h2 id="contact">6. Contact Us</h2>
+        </div>
+        <p class="muted">Questions or concerns</p>
+        <p>If you have any questions about this Privacy Policy, contact us at:
+          <br /><a class="email" href="mailto:sammarmehmood1342@gmail.com">sammarmehmood1342@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Tic Tac Toe</div>
+      <div>Last updated: <strong id="updated">8/27/2025</strong></div>
+    </footer>
+  </div>
+</body>
+</html>
